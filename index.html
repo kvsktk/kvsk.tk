@@ -40,21 +40,21 @@
             lvl7.setAttribute('width', '396');
             lvl7.setAttribute('height', '287');
             lvl7.innerHTML = '<use xlink:href="#lvl7"></use>';
-            document.appendChild(lvl7);
+            document.body.appendChild(lvl7);
         }
     </script>
 </head>
 
 <body>
         <script>
-                var logo = document.getElementById("lvl7").cloneNode(true);
-            logo.setAttribute("id", "logo");
-            document.body.appendChild(logo);
+            //var logo = document.getElementById("lvl7").cloneNode(true);
+           // logo.setAttribute("id", "logo");
+           // document.body.appendChild(logo);
             </script>
 
     <!-- NAVIGATION -->
     <div class="w3-bar w3-light-grey">
-        <a href="#" class="w3-bar-item w3-button w3-mobile"><svg width="34" height="24"><use xlink:href="#logo"></use></svg></a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile"><svg width="34" height="24"><use xlink:href="#lvl7"></use></svg></a>
         <span class="w3-right w3-mobile">
         <a href="#" class="w3-bar-item w3-button w3-mobile">Bounties</a>
         <a href="#" class="w3-bar-item w3-button w3-mobile">Link 2</a>
