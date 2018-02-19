@@ -29,7 +29,7 @@
         }
     </style>
     <script>
-        fetch(new Request('7.svg')).then(res => console.log(res.text)).catch(console.error);
+        fetch(new Request('7.svg')).then(res => res.text()).then(console.log).catch(console.error);
     </script>
 </head>
 
