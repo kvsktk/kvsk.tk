@@ -28,23 +28,6 @@
             fill: #21bae0;
         }
     </style>
-    <script>
-        var fragment = document.createDocumentFragment();
-        fetch(new Request('7.svg')).then(res => res.text()).then(insert).catch(console.error);
-        function insert(txt) {
-            let svg = document.createElement('svg');
-            svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-            //svg.innerHTML = txt;
-            svg.insertAdjacentHTML("afterbegin", txt);
-            document.body.appendChild(svg);
-            //fragment.appendChild(svg);
-            let lvl7 = document.createElement('svg');
-            lvl7.setAttribute('width', '34');
-            lvl7.setAttribute('height', '24');
-            lvl7.innerHTML = '<use xlink:href="#lvl7"></use>';
-            return document.getElementById('home').appendChild(lvl7);
-        }
-    </script>
 </head>
 
 <body>
@@ -56,7 +39,7 @@
 
     <!-- NAVIGATION -->
     <div class="w3-bar w3-light-grey">
-        <a id="home" href="#" class="w3-bar-item w3-button w3-mobile"></a>
+        <a id="home" href="#" class="w3-bar-item w3-button w3-mobile"><svg width="34" height="24"><use xlink:href="7.svg#lvl7"></use></svg></a>
         <span class="w3-right w3-mobile">
         <a href="#" class="w3-bar-item w3-button w3-mobile">Bounties</a>
         <a href="#" class="w3-bar-item w3-button w3-mobile">Link 2</a>
@@ -64,11 +47,5 @@
         <a href="#" class="w3-bar-item w3-button w3-win8-green w3-mobile">Go</a>
     </span>
     </div>
-    <script >fetch("https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/tiger.svg").then(function (response) {
-            return response.text();
-          }).then(function (svg2) {
-            return document.body.insertAdjacentHTML("afterbegin", svg2);
-          });
-          </script>
 </body>
 </html>
