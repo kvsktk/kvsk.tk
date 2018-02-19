@@ -32,6 +32,7 @@
         var fragment = document.createDocumentFragment();
         fetch(new Request('7.svg')).then(res => res.text()).then(insert).catch(console.error);
         function insert(txt) {
+            console.log(txt);
             let svg = document.createElement('svg');
             svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
             svg.innerHTML = txt;
