@@ -35,13 +35,13 @@
             let svg = document.createElement('svg');
             svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
             svg.innerHTML = txt;
-            fragment.appendChild(svg);
-            let lvl7 = document.createElement('svg');
-            lvl7.setAttribute('width', '396');
-            lvl7.setAttribute('height', '287');
+            document.body.appendChild(svg);
+            //fragment.appendChild(svg);
+            //let lvl7 = document.createElement('svg');
+            //lvl7.setAttribute('width', '396');
+            //lvl7.setAttribute('height', '287');
             //lvl7.innerHTML = '<use xlink:href="#lvl7"></use>';
-            lvl7.appendChild(fragment);
-            document.body.appendChild(lvl7);
+            //document.body.appendChild(lvl7);
         }
     </script>
 </head>
