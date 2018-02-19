@@ -64,5 +64,11 @@
         <a href="#" class="w3-bar-item w3-button w3-win8-green w3-mobile">Go</a>
     </span>
     </div>
+    <script >fetch("https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/tiger.svg").then(function (response) {
+            return response.text();
+          }).then(function (svg2) {
+            return document.body.insertAdjacentHTML("afterbegin", svg2);
+          });
+          </script>
 </body>
 </html>
